@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="xaxidma_example_simple_intr_1" location="C:/Users/enine/Desktop/DMA/vitis/xaxidma_example_simple_intr_1" platform="C:/Users/enine/Desktop/DMA/vitis/DMA/export/DMA/DMA.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="system_bsp_example_1" sysConfig="DMA" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_0" os="standalone" mssSignature="dbf2c7e0eb887a713aed9e911d009f15">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.809247578">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.2090976936" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

@@ -1,0 +1,904 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Mar 24 16:14:45 2025
+# Process ID: 13488
+# Current directory: C:/Users/enine/Desktop/DMA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29832 C:\Users\enine\Desktop\DMA\DMA.xpr
+# Log file: C:/Users/enine/Desktop/DMA/vivado.log
+# Journal file: C:/Users/enine/Desktop/DMA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/enine/Desktop/DMA/DMA.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.684 ; gain = 235.805
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Successfully read diagram <design_1> from BD file <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd>
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:floating_point:7.1 floating_point_0
+endgroup
+set_property location {2 680 470} [get_bd_cells floating_point_0]
+set_property -dict [list CONFIG.A_Precision_Type.VALUE_SRC USER CONFIG.C_A_Exponent_Width.VALUE_SRC USER CONFIG.C_A_Fraction_Width.VALUE_SRC USER] [get_bd_cells floating_point_0]
+set_property -dict [list CONFIG.Operation_Type {Fixed_to_float} CONFIG.A_Precision_Type {Custom} CONFIG.C_A_Exponent_Width {28} CONFIG.C_A_Fraction_Width {4} CONFIG.Result_Precision_Type {Single} CONFIG.C_Result_Exponent_Width {8} CONFIG.C_Result_Fraction_Width {24} CONFIG.C_Accum_Msb {32} CONFIG.C_Accum_Lsb {-31} CONFIG.C_Accum_Input_Msb {32} CONFIG.C_Mult_Usage {No_Usage} CONFIG.C_Latency {7} CONFIG.C_Rate {1}] [get_bd_cells floating_point_0]
+set_property -dict [list CONFIG.Result_Precision_Type {Single} CONFIG.Has_A_TLAST {true} CONFIG.C_Result_Exponent_Width {8} CONFIG.C_Result_Fraction_Width {24} CONFIG.C_Latency {7} CONFIG.RESULT_TLAST_Behv {Pass_A_TLAST}] [get_bd_cells floating_point_0]
+set_property location {1 608 326} [get_bd_cells floating_point_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+set_property location {1 264 277} [get_bd_cells axi_dma_0]
+set_property location {3 1114 570} [get_bd_cells axi_dma_0]
+set_property location {2 1123 532} [get_bd_cells axi_dma_0]
+set_property location {1 586 501} [get_bd_cells axi_dma_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+Slave segment </axi_dma_0/S_AXI_LITE/Reg> is being mapped into address space </microblaze_0/Data> at <0x41E0_0000 [ 64K ]>
+regenerate_bd_layout
+set_property location {2 507 745} [get_bd_cells axi_dma_0]
+set_property location {3 1021 655} [get_bd_cells axi_dma_0]
+set_property location {2 480 633} [get_bd_cells floating_point_0]
+connect_bd_intf_net [get_bd_intf_pins floating_point_0/M_AXIS_RESULT] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+connect_bd_intf_net [get_bd_intf_pins floating_point_0/S_AXIS_A] [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S]
+startgroup
+set_property -dict [list CONFIG.c_include_sg {0} CONFIG.c_sg_include_stscntrl_strm {0}] [get_bd_cells axi_dma_0]
+endgroup
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz_1/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins floating_point_0/aclk]
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+startgroup
+set_property -dict [list CONFIG.NUM_SI {3} CONFIG.NUM_MI {2}] [get_bd_cells microblaze_0_axi_periph]
+endgroup
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins microblaze_0_axi_periph/S01_AXI] [get_bd_intf_pins axi_dma_0/M_AXI_MM2S]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins microblaze_0_axi_periph/S02_AXI] [get_bd_intf_pins axi_dma_0/M_AXI_S2MM]
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz_1/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins microblaze_0_axi_periph/S01_ACLK]
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz_1/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins microblaze_0_axi_periph/S02_ACLK]
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0
+endgroup
+set_property location {4 1378 601} [get_bd_cells blk_mem_gen_0]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.PRIM_type_to_Implement {BRAM} CONFIG.Assume_Synchronous_Clk {false} CONFIG.EN_SAFETY_CKT {true}] [get_bd_cells blk_mem_gen_0]
+set_property location {5 1640 613} [get_bd_cells blk_mem_gen_0]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_0
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-2] design_1_axi_bram_ctrl_0_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-1] design_1_axi_bram_ctrl_0_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+endgroup
+set_property location {4 1375 579} [get_bd_cells axi_bram_ctrl_0]
+set_property location {4 1368 585} [get_bd_cells axi_bram_ctrl_0]
+set_property location {4 1351 592} [get_bd_cells axi_bram_ctrl_0]
+set_property location {4 1363 614} [get_bd_cells axi_bram_ctrl_0]
+WARNING: [IP_Flow 19-465] param 'READ_LATENCY' already exists. Ignoring.
+WARNING: [IP_Flow 19-465] param 'RD_CMD_OPTIMIZATION' already exists. Ignoring.
+set_property -dict [list CONFIG.SINGLE_PORT_BRAM {1}] [get_bd_cells axi_bram_ctrl_0]
+connect_bd_intf_net [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTA]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+startgroup
+set_property -dict [list CONFIG.NUM_MI {3}] [get_bd_cells microblaze_0_axi_periph]
+endgroup
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins microblaze_0_axi_periph/M02_AXI] [get_bd_intf_pins axi_bram_ctrl_0/S_AXI]
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz_1/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_bram_ctrl_0/s_axi_aclk]
+INFO: [BD 5-455] Automation on '/microblaze_0_axi_periph/M02_ACLK' will not be run, since it is obsolete due to previously run automations
+endgroup
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+assign_bd_address
+Slave segment </axi_bram_ctrl_0/S_AXI/Mem0> is being mapped into address space </axi_dma_0/Data_MM2S> at <0xC000_0000 [ 8K ]>
+Slave segment </axi_bram_ctrl_0/S_AXI/Mem0> is being mapped into address space </axi_dma_0/Data_S2MM> at <0xC000_0000 [ 8K ]>
+Slave segment </axi_bram_ctrl_0/S_AXI/Mem0> is being mapped into address space </microblaze_0/Data> at <0xC000_0000 [ 8K ]>
+Slave segment </axi_dma_0/S_AXI_LITE/Reg> is being mapped into address space </axi_dma_0/Data_MM2S> at <0x41E0_0000 [ 64K ]>
+INFO: [BD 41-1051] The usage register of slave segment /axi_dma_0/S_AXI_LITE/Reg does not match the usage memory of address space /axi_dma_0/Data_MM2S and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_MM2S.
+Slave segment </axi_dma_0/S_AXI_LITE/Reg> is being mapped into address space </axi_dma_0/Data_S2MM> at <0x41E0_0000 [ 64K ]>
+INFO: [BD 41-1051] The usage register of slave segment /axi_dma_0/S_AXI_LITE/Reg does not match the usage memory of address space /axi_dma_0/Data_S2MM and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding slave segment /axi_dma_0/S_AXI_LITE/Reg from address space /axi_dma_0/Data_S2MM.
+Slave segment </axi_uartlite_0/S_AXI/Reg> is being mapped into address space </axi_dma_0/Data_MM2S> at <0x4060_0000 [ 64K ]>
+INFO: [BD 41-1051] The usage register of slave segment /axi_uartlite_0/S_AXI/Reg does not match the usage memory of address space /axi_dma_0/Data_MM2S and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding slave segment /axi_uartlite_0/S_AXI/Reg from address space /axi_dma_0/Data_MM2S.
+Slave segment </axi_uartlite_0/S_AXI/Reg> is being mapped into address space </axi_dma_0/Data_S2MM> at <0x4060_0000 [ 64K ]>
+INFO: [BD 41-1051] The usage register of slave segment /axi_uartlite_0/S_AXI/Reg does not match the usage memory of address space /axi_dma_0/Data_S2MM and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding slave segment /axi_uartlite_0/S_AXI/Reg from address space /axi_dma_0/Data_S2MM.
+set_property range 64K [get_bd_addr_segs {microblaze_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+set_property range 64K [get_bd_addr_segs {axi_dma_0/Data_MM2S/SEG_axi_bram_ctrl_0_Mem0}]
+set_property range 64K [get_bd_addr_segs {axi_dma_0/Data_S2MM/SEG_axi_bram_ctrl_0_Mem0}]
+open_bd_design {C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd}
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 A_Precision_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Exponent_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Fraction_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 A_Precision_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Exponent_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Fraction_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block floating_point_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m01_couplers/auto_pc .
+Exporting to file C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-5642] Done with IP cache export for multiple IPs
+[Mon Mar 24 19:43:49 2025] Launched design_1_dlmb_bram_if_cntlr_0_synth_1, design_1_axi_dma_0_0_synth_1, design_1_floating_point_0_0_synth_1, design_1_xbar_0_synth_1, design_1_auto_pc_1_synth_1, design_1_axi_bram_ctrl_0_0_synth_1, design_1_blk_mem_gen_0_0_synth_1, design_1_auto_pc_0_synth_1, design_1_auto_pc_2_synth_1, synth_1...
+Run output will be captured here:
+design_1_dlmb_bram_if_cntlr_0_synth_1: C:/Users/enine/Desktop/DMA/DMA.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/runme.log
+design_1_axi_dma_0_0_synth_1: C:/Users/enine/Desktop/DMA/DMA.runs/design_1_axi_dma_0_0_synth_1/runme.log
+design_1_floating_point_0_0_synth_1: C:/Users/enine/Desktop/DMA/DMA.runs/design_1_floating_point_0_0_synth_1/runme.log
+design_1_xbar_0_synth_1: C:/Users/enine/Desktop/DMA/DMA.runs/design_1_xbar_0_synth_1/runme.log
+design_1_auto_pc_1_synth_1: C:/Users/enine/Desktop/DMA/DMA.runs/design_1_auto_pc_1_synth_1/runme.log
+design_1_axi_bram_ctrl_0_0_synth_1: C:/Users/enine/Desktop/DMA/DMA.runs/design_1_axi_bram_ctrl_0_0_synth_1/runme.log
+design_1_blk_mem_gen_0_0_synth_1: C:/Users/enine/Desktop/DMA/DMA.runs/design_1_blk_mem_gen_0_0_synth_1/runme.log
+design_1_auto_pc_0_synth_1: C:/Users/enine/Desktop/DMA/DMA.runs/design_1_auto_pc_0_synth_1/runme.log
+design_1_auto_pc_2_synth_1: C:/Users/enine/Desktop/DMA/DMA.runs/design_1_auto_pc_2_synth_1/runme.log
+synth_1: C:/Users/enine/Desktop/DMA/DMA.runs/synth_1/runme.log
+[Mon Mar 24 19:43:49 2025] Launched impl_1...
+Run output will be captured here: C:/Users/enine/Desktop/DMA/DMA.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1483.551 ; gain = 136.379
+write_hw_platform -fixed -force  -include_bit -file C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (D:/Programs/Xilinx/Vivado/2019.2/data\embeddedsw) loading 0 seconds
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+make_wrapper -files [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -top
+generate_target all [get_files  C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'design_1' - hence not re-generating.
+export_ip_user_files -of_objects [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/enine/Desktop/DMA/DMA.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/enine/Desktop/DMA/DMA.ip_user_files -ipstatic_source_dir C:/Users/enine/Desktop/DMA/DMA.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/modelsim} {questa=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/questa} {riviera=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/riviera} {activehdl=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+[Mon Mar 24 19:59:09 2025] Launched impl_1...
+Run output will be captured here: C:/Users/enine/Desktop/DMA/DMA.runs/impl_1/runme.log
+open_bd_design {C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_intc:4.1 axi_intc_0
+endgroup
+set_property location {2 335 625} [get_bd_cells axi_intc_0]
+set_property location {2 587 69} [get_bd_cells axi_intc_0]
+set_property location {2 665 173} [get_bd_cells axi_intc_0]
+connect_bd_intf_net [get_bd_intf_pins axi_intc_0/interrupt] [get_bd_intf_pins microblaze_0/INTERRUPT]
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_intc_0/s_axi} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_intc_0/s_axi]
+Slave segment </axi_intc_0/S_AXI/Reg> is being mapped into address space </axi_dma_0/Data_MM2S> at <0x4120_0000 [ 64K ]>
+INFO: [BD 41-1051] The usage register of slave segment /axi_intc_0/S_AXI/Reg does not match the usage memory of address space /axi_dma_0/Data_MM2S and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding slave segment /axi_intc_0/S_AXI/Reg from address space /axi_dma_0/Data_MM2S.
+Slave segment </axi_intc_0/S_AXI/Reg> is being mapped into address space </axi_dma_0/Data_S2MM> at <0x4120_0000 [ 64K ]>
+INFO: [BD 41-1051] The usage register of slave segment /axi_intc_0/S_AXI/Reg does not match the usage memory of address space /axi_dma_0/Data_S2MM and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding slave segment /axi_intc_0/S_AXI/Reg from address space /axi_dma_0/Data_S2MM.
+Slave segment </axi_intc_0/S_AXI/Reg> is being mapped into address space </microblaze_0/Data> at <0x4120_0000 [ 64K ]>
+undo
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_intc_0/s_axi} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_intc_0/s_axi]'
+Including slave segment </axi_intc_0/S_AXI/Reg> into address space </axi_dma_0/Data_S2MM>.
+Including slave segment </axi_intc_0/S_AXI/Reg> into address space </axi_dma_0/Data_MM2S>.
+connect_bd_net [get_bd_pins axi_intc_0/s_axi_aclk] [get_bd_pins clk_wiz_1/clk_out1]
+connect_bd_net [get_bd_pins axi_intc_0/s_axi_aresetn] [get_bd_pins rst_clk_wiz_1_100M/peripheral_aresetn]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins axi_intc_0/s_axi_aresetn] [get_bd_pins rst_clk_wiz_1_100M/peripheral_aresetn]'
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins axi_intc_0/s_axi_aclk] [get_bd_pins clk_wiz_1/clk_out1]'
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_intc_0/s_axi} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_intc_0/s_axi]
+Slave segment </axi_intc_0/S_AXI/Reg> is being mapped into address space </axi_dma_0/Data_MM2S> at <0x4120_0000 [ 64K ]>
+INFO: [BD 41-1051] The usage register of slave segment /axi_intc_0/S_AXI/Reg does not match the usage memory of address space /axi_dma_0/Data_MM2S and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding slave segment /axi_intc_0/S_AXI/Reg from address space /axi_dma_0/Data_MM2S.
+Slave segment </axi_intc_0/S_AXI/Reg> is being mapped into address space </axi_dma_0/Data_S2MM> at <0x4120_0000 [ 64K ]>
+INFO: [BD 41-1051] The usage register of slave segment /axi_intc_0/S_AXI/Reg does not match the usage memory of address space /axi_dma_0/Data_S2MM and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding slave segment /axi_intc_0/S_AXI/Reg from address space /axi_dma_0/Data_S2MM.
+Slave segment </axi_intc_0/S_AXI/Reg> is being mapped into address space </microblaze_0/Data> at <0x4120_0000 [ 64K ]>
+undo
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_intc_0/s_axi} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_intc_0/s_axi]'
+Including slave segment </axi_intc_0/S_AXI/Reg> into address space </axi_dma_0/Data_S2MM>.
+Including slave segment </axi_intc_0/S_AXI/Reg> into address space </axi_dma_0/Data_MM2S>.
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+connect_bd_net [get_bd_pins axi_intc_0/s_axi_aclk] [get_bd_pins clk_wiz_1/clk_out1]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins axi_intc_0/s_axi_aclk] [get_bd_pins clk_wiz_1/clk_out1]'
+connect_bd_net [get_bd_pins axi_intc_0/s_axi_aclk] [get_bd_pins clk_wiz_1/clk_out1]
+connect_bd_net [get_bd_pins axi_intc_0/s_axi_aresetn] [get_bd_pins rst_clk_wiz_1_100M/peripheral_aresetn]
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.C_KIND_OF_INTR.VALUE_SRC PROPAGATED] [get_bd_cells axi_intc_0]
+set_property -dict [list CONFIG.C_HAS_SIE {1} CONFIG.C_HAS_ILR {0} CONFIG.C_IRQ_IS_LEVEL {0} CONFIG.C_HAS_FAST {0} CONFIG.C_EN_CASCADE_MODE {0} CONFIG.C_MB_CLK_NOT_CONNECTED {1} CONFIG.C_DISABLE_SYNCHRONIZERS {1}] [get_bd_cells axi_intc_0]
+endgroup
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.C_IRQ_CONNECTION {0}] [get_bd_cells axi_intc_0]
+endgroup
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+endgroup
+WARNING: [IP_Flow 19-465] param 'READ_LATENCY' already exists. Ignoring.
+WARNING: [IP_Flow 19-465] param 'RD_CMD_OPTIMIZATION' already exists. Ignoring.
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+connect_bd_net [get_bd_pins axi_dma_0/s2mm_introut] [get_bd_pins axi_intc_0/intr]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {4}] [get_bd_cells microblaze_0_axi_periph]
+endgroup
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins microblaze_0_axi_periph/M03_AXI] [get_bd_intf_pins axi_intc_0/s_axi]
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz_1/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins microblaze_0_axi_periph/M03_ACLK]
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+assign_bd_address
+Slave segment </axi_intc_0/S_AXI/Reg> is being mapped into address space </axi_dma_0/Data_MM2S> at <0x4120_0000 [ 64K ]>
+INFO: [BD 41-1051] The usage register of slave segment /axi_intc_0/S_AXI/Reg does not match the usage memory of address space /axi_dma_0/Data_MM2S and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding slave segment /axi_intc_0/S_AXI/Reg from address space /axi_dma_0/Data_MM2S.
+Slave segment </axi_intc_0/S_AXI/Reg> is being mapped into address space </axi_dma_0/Data_S2MM> at <0x4120_0000 [ 64K ]>
+INFO: [BD 41-1051] The usage register of slave segment /axi_intc_0/S_AXI/Reg does not match the usage memory of address space /axi_dma_0/Data_S2MM and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
+Excluding slave segment /axi_intc_0/S_AXI/Reg from address space /axi_dma_0/Data_S2MM.
+Slave segment </axi_intc_0/S_AXI/Reg> is being mapped into address space </microblaze_0/Data> at <0x4120_0000 [ 64K ]>
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 A_Precision_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Exponent_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Fraction_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 A_Precision_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Exponent_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Fraction_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+generate_target all [get_files  C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block floating_point_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_intc_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_pc .
+Exporting to file C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+catch { config_ip_cache -export [get_ips -all design_1_microblaze_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_xbar_0] }
+catch { config_ip_cache -export [get_ips -all design_1_axi_intc_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = d7e627f41d175b8a; cache size = 18.942 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = b64cc260899524bf; cache size = 18.942 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = b64cc260899524bf; cache size = 18.942 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = b64cc260899524bf; cache size = 18.942 MB.
+export_ip_user_files -of_objects [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 32 {design_1_microblaze_0_0_synth_1 design_1_xbar_0_synth_1 design_1_axi_intc_0_0_synth_1}
+[Wed Mar 26 14:09:56 2025] Launched design_1_microblaze_0_0_synth_1, design_1_xbar_0_synth_1, design_1_axi_intc_0_0_synth_1...
+Run output will be captured here:
+design_1_microblaze_0_0_synth_1: C:/Users/enine/Desktop/DMA/DMA.runs/design_1_microblaze_0_0_synth_1/runme.log
+design_1_xbar_0_synth_1: C:/Users/enine/Desktop/DMA/DMA.runs/design_1_xbar_0_synth_1/runme.log
+design_1_axi_intc_0_0_synth_1: C:/Users/enine/Desktop/DMA/DMA.runs/design_1_axi_intc_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/enine/Desktop/DMA/DMA.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/enine/Desktop/DMA/DMA.ip_user_files -ipstatic_source_dir C:/Users/enine/Desktop/DMA/DMA.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/modelsim} {questa=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/questa} {riviera=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/riviera} {activehdl=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/enine/Desktop/DMA/DMA.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+INFO: [IP_Flow 19-5642] Done with IP cache export for multiple IPs
+[Wed Mar 26 14:10:20 2025] Launched design_1_microblaze_0_0_synth_1, design_1_xbar_0_synth_1, design_1_axi_intc_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_microblaze_0_0_synth_1: C:/Users/enine/Desktop/DMA/DMA.runs/design_1_microblaze_0_0_synth_1/runme.log
+design_1_xbar_0_synth_1: C:/Users/enine/Desktop/DMA/DMA.runs/design_1_xbar_0_synth_1/runme.log
+design_1_axi_intc_0_0_synth_1: C:/Users/enine/Desktop/DMA/DMA.runs/design_1_axi_intc_0_0_synth_1/runme.log
+synth_1: C:/Users/enine/Desktop/DMA/DMA.runs/synth_1/runme.log
+[Wed Mar 26 14:10:20 2025] Launched impl_1...
+Run output will be captured here: C:/Users/enine/Desktop/DMA/DMA.runs/impl_1/runme.log
+write_hw_platform -fixed -force  -include_bit -file C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa ...
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+delete_bd_objs [get_bd_nets axi_dma_0_s2mm_introut]
+connect_bd_net [get_bd_pins axi_uartlite_0/interrupt] [get_bd_pins axi_intc_0/intr]
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 A_Precision_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Exponent_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Fraction_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 A_Precision_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Exponent_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Fraction_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+generate_target all [get_files  C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block floating_point_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_intc_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_pc .
+Exporting to file C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+catch { config_ip_cache -export [get_ips -all design_1_axi_intc_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = d7e627f41d175b8a; cache size = 26.673 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = b64cc260899524bf; cache size = 26.673 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = b64cc260899524bf; cache size = 26.673 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = b64cc260899524bf; cache size = 26.673 MB.
+export_ip_user_files -of_objects [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 32 design_1_axi_intc_0_0_synth_1
+[Wed Mar 26 14:34:17 2025] Launched design_1_axi_intc_0_0_synth_1...
+Run output will be captured here: C:/Users/enine/Desktop/DMA/DMA.runs/design_1_axi_intc_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/enine/Desktop/DMA/DMA.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/enine/Desktop/DMA/DMA.ip_user_files -ipstatic_source_dir C:/Users/enine/Desktop/DMA/DMA.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/modelsim} {questa=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/questa} {riviera=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/riviera} {activehdl=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+[Wed Mar 26 14:35:30 2025] Launched synth_1...
+Run output will be captured here: C:/Users/enine/Desktop/DMA/DMA.runs/synth_1/runme.log
+[Wed Mar 26 14:35:30 2025] Launched impl_1...
+Run output will be captured here: C:/Users/enine/Desktop/DMA/DMA.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xczu4ev-sfvc784-1-i
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.216 . Memory (MB): peak = 2871.883 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 262 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.455 . Memory (MB): peak = 3208.172 ; gain = 14.301
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.458 . Memory (MB): peak = 3208.172 ; gain = 14.301
+Generating merged BMM file for the design top 'design_1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 3208.172 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 110 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 79 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 1 instance 
+  SRLC16E => SRL16E: 1 instance 
+  SRLC32E => SRL16E: 10 instances
+
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 3587.664 ; gain = 1042.379
+write_hw_platform -fixed -force  -include_bit -file C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa ...
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_1
+endgroup
+delete_bd_objs [get_bd_cells axi_uartlite_1]
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.C_IRQ_IS_LEVEL {1}] [get_bd_cells axi_intc_0]
+endgroup
+make_wrapper -files [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 A_Precision_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Exponent_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Fraction_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 A_Precision_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Exponent_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Fraction_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+make_wrapper -files [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+generate_target all [get_files  C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block floating_point_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_intc_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_pc .
+Exporting to file C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+catch { config_ip_cache -export [get_ips -all design_1_microblaze_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_axi_intc_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = d7e627f41d175b8a; cache size = 26.883 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = b64cc260899524bf; cache size = 26.883 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = b64cc260899524bf; cache size = 26.883 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = b64cc260899524bf; cache size = 26.883 MB.
+export_ip_user_files -of_objects [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 32 {design_1_microblaze_0_0_synth_1 design_1_axi_intc_0_0_synth_1}
+[Wed Mar 26 15:47:15 2025] Launched design_1_microblaze_0_0_synth_1, design_1_axi_intc_0_0_synth_1...
+Run output will be captured here:
+design_1_microblaze_0_0_synth_1: C:/Users/enine/Desktop/DMA/DMA.runs/design_1_microblaze_0_0_synth_1/runme.log
+design_1_axi_intc_0_0_synth_1: C:/Users/enine/Desktop/DMA/DMA.runs/design_1_axi_intc_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/enine/Desktop/DMA/DMA.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/enine/Desktop/DMA/DMA.ip_user_files -ipstatic_source_dir C:/Users/enine/Desktop/DMA/DMA.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/modelsim} {questa=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/questa} {riviera=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/riviera} {activehdl=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+[Wed Mar 26 15:48:14 2025] Launched synth_1...
+Run output will be captured here: C:/Users/enine/Desktop/DMA/DMA.runs/synth_1/runme.log
+[Wed Mar 26 15:48:14 2025] Launched impl_1...
+Run output will be captured here: C:/Users/enine/Desktop/DMA/DMA.runs/impl_1/runme.log
+write_hw_platform -fixed -force  -include_bit -file C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa ...
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.C_IRQ_IS_LEVEL {0}] [get_bd_cells axi_intc_0]
+endgroup
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 A_Precision_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Exponent_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Fraction_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 A_Precision_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Exponent_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Fraction_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+generate_target all [get_files  C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block floating_point_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_intc_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_pc .
+Exporting to file C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+catch { config_ip_cache -export [get_ips -all design_1_microblaze_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_microblaze_0_0, cache-ID = 3f45ea135710896e; cache size = 32.703 MB.
+catch { [ delete_ip_run [get_ips -all design_1_microblaze_0_0] ] }
+catch { config_ip_cache -export [get_ips -all design_1_axi_intc_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_intc_0_0, cache-ID = d8684573f368de2b; cache size = 32.703 MB.
+catch { [ delete_ip_run [get_ips -all design_1_axi_intc_0_0] ] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = d7e627f41d175b8a; cache size = 32.703 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = b64cc260899524bf; cache size = 32.703 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = b64cc260899524bf; cache size = 32.703 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = b64cc260899524bf; cache size = 32.703 MB.
+export_ip_user_files -of_objects [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/enine/Desktop/DMA/DMA.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/enine/Desktop/DMA/DMA.ip_user_files -ipstatic_source_dir C:/Users/enine/Desktop/DMA/DMA.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/modelsim} {questa=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/questa} {riviera=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/riviera} {activehdl=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files  C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for block design 'design_1' - hence not re-generating.
+export_ip_user_files -of_objects [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/enine/Desktop/DMA/DMA.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/enine/Desktop/DMA/DMA.ip_user_files -ipstatic_source_dir C:/Users/enine/Desktop/DMA/DMA.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/modelsim} {questa=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/questa} {riviera=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/riviera} {activehdl=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+[Wed Mar 26 16:49:05 2025] Launched synth_1...
+Run output will be captured here: C:/Users/enine/Desktop/DMA/DMA.runs/synth_1/runme.log
+[Wed Mar 26 16:49:05 2025] Launched impl_1...
+Run output will be captured here: C:/Users/enine/Desktop/DMA/DMA.runs/impl_1/runme.log
+write_hw_platform -fixed -force  -include_bit -file C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa ...
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+delete_bd_objs [get_bd_nets axi_uartlite_0_interrupt]
+connect_bd_net [get_bd_pins axi_dma_0/s2mm_introut] [get_bd_pins axi_intc_0/intr]
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 A_Precision_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Exponent_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Fraction_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 A_Precision_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Exponent_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Fraction_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+generate_target all [get_files  C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block floating_point_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_intc_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_pc .
+Exporting to file C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+catch { config_ip_cache -export [get_ips -all design_1_axi_intc_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_intc_0_0, cache-ID = 3a695b7e1e993e6f; cache size = 32.703 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = d7e627f41d175b8a; cache size = 32.703 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = b64cc260899524bf; cache size = 32.703 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = b64cc260899524bf; cache size = 32.703 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = b64cc260899524bf; cache size = 32.703 MB.
+export_ip_user_files -of_objects [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/enine/Desktop/DMA/DMA.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/enine/Desktop/DMA/DMA.ip_user_files -ipstatic_source_dir C:/Users/enine/Desktop/DMA/DMA.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/modelsim} {questa=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/questa} {riviera=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/riviera} {activehdl=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+[Wed Mar 26 19:39:23 2025] Launched synth_1...
+Run output will be captured here: C:/Users/enine/Desktop/DMA/DMA.runs/synth_1/runme.log
+[Wed Mar 26 19:39:23 2025] Launched impl_1...
+Run output will be captured here: C:/Users/enine/Desktop/DMA/DMA.runs/impl_1/runme.log
+write_hw_platform -fixed -force  -include_bit -file C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa ...
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa
+open_bd_design {C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+set_property location {4.5 1570 738} [get_bd_cells xlconcat_0]
+delete_bd_objs [get_bd_nets axi_dma_0_s2mm_introut]
+connect_bd_net [get_bd_pins axi_dma_0/mm2s_introut] [get_bd_pins xlconcat_0/In0]
+connect_bd_net [get_bd_pins axi_dma_0/s2mm_introut] [get_bd_pins xlconcat_0/In1]
+connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins axi_intc_0/intr]
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 A_Precision_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Exponent_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Fraction_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 A_Precision_Type has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Exponent_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:floating_point:7.1-913] /floating_point_0 C_A_Fraction_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+generate_target all [get_files  C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(16) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block floating_point_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_intc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_pc .
+Exporting to file C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+catch { config_ip_cache -export [get_ips -all design_1_axi_intc_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = d7e627f41d175b8a; cache size = 32.703 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = b64cc260899524bf; cache size = 32.703 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = b64cc260899524bf; cache size = 32.703 MB.
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = b64cc260899524bf; cache size = 32.703 MB.
+export_ip_user_files -of_objects [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 32 design_1_axi_intc_0_0_synth_1
+[Wed Mar 26 20:06:39 2025] Launched design_1_axi_intc_0_0_synth_1...
+Run output will be captured here: C:/Users/enine/Desktop/DMA/DMA.runs/design_1_axi_intc_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/enine/Desktop/DMA/DMA.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/enine/Desktop/DMA/DMA.ip_user_files -ipstatic_source_dir C:/Users/enine/Desktop/DMA/DMA.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/modelsim} {questa=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/questa} {riviera=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/riviera} {activehdl=C:/Users/enine/Desktop/DMA/DMA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+[Wed Mar 26 20:07:30 2025] Launched synth_1...
+Run output will be captured here: C:/Users/enine/Desktop/DMA/DMA.runs/synth_1/runme.log
+[Wed Mar 26 20:07:30 2025] Launched impl_1...
+Run output will be captured here: C:/Users/enine/Desktop/DMA/DMA.runs/impl_1/runme.log
+write_hw_platform -fixed -force  -include_bit -file C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa ...
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+open_bd_design {C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/design_1.bd}
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 vio_0
+endgroup
+set_property -dict [list CONFIG.C_EN_PROBE_IN_ACTIVITY {0} CONFIG.C_NUM_PROBE_IN {0}] [get_bd_cells vio_0]
+set_property location {2 350 173} [get_bd_cells vio_0]
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+delete_bd_objs [get_bd_cells vio_0]
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 vio_0
+endgroup
+delete_bd_objs [get_bd_cells vio_0]
+save_bd_design
+Wrote  : <C:\Users\enine\Desktop\DMA\DMA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/enine/Desktop/DMA/DMA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 28 11:43:33 2025...

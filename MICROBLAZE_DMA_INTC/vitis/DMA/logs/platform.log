@@ -1,0 +1,1038 @@
+TRACE::2025-03-26.20:20:50::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:50::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:50::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:51::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:51::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:51::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:51::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened new HwDB with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWWriter::formatted JSON is {
+	"platformName":	"DMA",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"DMA",
+	"platHandOff":	"C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2025-03-26.20:20:52::SCWWriter::formatted JSON is {
+	"platformName":	"DMA",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"DMA",
+	"platHandOff":	"C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"DMA",
+	"systems":	[{
+			"systemName":	"DMA",
+			"systemDesc":	"DMA",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"DMA"
+		}]
+}
+TRACE::2025-03-26.20:20:52::SCWPlatform::Boot application domains not present, creating them
+TRACE::2025-03-26.20:20:52::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2025-03-26.20:20:52::SCWWriter::formatted JSON is {
+	"platformName":	"DMA",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"DMA",
+	"platHandOff":	"C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"DMA",
+	"systems":	[{
+			"systemName":	"DMA",
+			"systemDesc":	"DMA",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"DMA"
+		}]
+}
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWDomain::checking for install qemu data   : 
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-03-26.20:20:52::SCWMssOS::No sw design opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::mss does not exists at C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::Creating sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::Adding the swdes entry, created swdb C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss with des name C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::Writing mss at C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::Completed writing the mss file at C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp
+TRACE::2025-03-26.20:20:52::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2025-03-26.20:20:52::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWWriter::formatted JSON is {
+	"platformName":	"DMA",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"DMA",
+	"platHandOff":	"C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"DMA",
+	"systems":	[{
+			"systemName":	"DMA",
+			"systemDesc":	"DMA",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"DMA",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::Completed writing the mss file at C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp
+TRACE::2025-03-26.20:20:52::SCWMssOS::Forcing BSP Sources regeneration.
+LOG::2025-03-26.20:20:52::SCWPlatform::Started generating the artifacts platform DMA
+TRACE::2025-03-26.20:20:52::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-03-26.20:20:52::SCWPlatform::Started generating the artifacts for system configuration DMA
+LOG::2025-03-26.20:20:52::SCWSystem::Checking the domain standalone_domain
+LOG::2025-03-26.20:20:52::SCWSystem::Not a boot domain 
+LOG::2025-03-26.20:20:52::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2025-03-26.20:20:52::SCWDomain::Generating domain artifcats
+TRACE::2025-03-26.20:20:52::SCWMssOS::Generating standalone artifcats
+TRACE::2025-03-26.20:20:52::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss||
+
+KEYINFO::2025-03-26.20:20:52::SCWMssOS::Could not open the swdb for C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+KEYINFO::2025-03-26.20:20:52::SCWMssOS::Could not open the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss is not found
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Cleared the swdb table entry
+TRACE::2025-03-26.20:20:52::SCWMssOS::No sw design opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::mss exists loading the mss file  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::Opened the sw design from mss  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::Adding the swdes entry C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2025-03-26.20:20:52::SCWMssOS::updating the scw layer about changes
+TRACE::2025-03-26.20:20:52::SCWMssOS::Opened the sw design.  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::Completed writing the mss file at C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp
+TRACE::2025-03-26.20:20:52::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-03-26.20:20:52::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-03-26.20:20:52::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2025-03-26.20:20:52::SCWMssOS::skipping the bsp build ... 
+TRACE::2025-03-26.20:20:52::SCWMssOS::Copying to export directory.
+TRACE::2025-03-26.20:20:52::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-03-26.20:20:52::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-03-26.20:20:52::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2025-03-26.20:20:52::SCWSystem::Completed Processing the sysconfig DMA
+LOG::2025-03-26.20:20:52::SCWPlatform::Completed generating the artifacts for system configuration DMA
+TRACE::2025-03-26.20:20:52::SCWPlatform::Started preparing the platform 
+TRACE::2025-03-26.20:20:52::SCWSystem::Writing the bif file for system config DMA
+TRACE::2025-03-26.20:20:52::SCWSystem::dir created 
+TRACE::2025-03-26.20:20:52::SCWSystem::Writing the bif 
+TRACE::2025-03-26.20:20:52::SCWPlatform::Started writing the spfm file 
+TRACE::2025-03-26.20:20:52::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-03-26.20:20:52::SCWPlatform::Completed generating the platform
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWWriter::formatted JSON is {
+	"platformName":	"DMA",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"DMA",
+	"platHandOff":	"C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"DMA",
+	"systems":	[{
+			"systemName":	"DMA",
+			"systemDesc":	"DMA",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"DMA",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"4a374d4c711e440f40e29adcede1bcb0",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-03-26.20:20:52::SCWPlatform::updated the xpfm file.
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWWriter::formatted JSON is {
+	"platformName":	"DMA",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"DMA",
+	"platHandOff":	"C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"DMA",
+	"systems":	[{
+			"systemName":	"DMA",
+			"systemDesc":	"DMA",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"DMA",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"4a374d4c711e440f40e29adcede1bcb0",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWWriter::formatted JSON is {
+	"platformName":	"DMA",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"DMA",
+	"platHandOff":	"C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"DMA",
+	"systems":	[{
+			"systemName":	"DMA",
+			"systemDesc":	"DMA",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"DMA",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"4a374d4c711e440f40e29adcede1bcb0",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWWriter::formatted JSON is {
+	"platformName":	"DMA",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"DMA",
+	"platHandOff":	"C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"DMA",
+	"systems":	[{
+			"systemName":	"DMA",
+			"systemDesc":	"DMA",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"DMA",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"4a374d4c711e440f40e29adcede1bcb0",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2025-03-26.20:20:52::SCWPlatform::Clearing the existing platform
+TRACE::2025-03-26.20:20:52::SCWSystem::Clearing the existing sysconfig
+TRACE::2025-03-26.20:20:52::SCWMssOS::Removing the swdes entry for  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWSystem::Clearing the domains completed.
+TRACE::2025-03-26.20:20:52::SCWPlatform::Clearing the opened hw db.
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform location is C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Removing the HwDB with name C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened new HwDB with name design_1_wrapper_1
+TRACE::2025-03-26.20:20:52::SCWReader::Active system found as  DMA
+TRACE::2025-03-26.20:20:52::SCWReader::Handling sysconfig DMA
+TRACE::2025-03-26.20:20:52::SCWDomain::checking for install qemu data   : 
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-03-26.20:20:52::SCWMssOS::No sw design opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::mss exists loading the mss file  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::Opened the sw design from mss  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::Adding the swdes entry C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2025-03-26.20:20:52::SCWMssOS::updating the scw layer about changes
+TRACE::2025-03-26.20:20:52::SCWMssOS::Opened the sw design.  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-03-26.20:20:52::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:52::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:52::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-03-26.20:20:52::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-03-26.20:20:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:52::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:20:52::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:52::SCWReader::No isolation master present  
+TRACE::2025-03-26.20:20:53::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:53::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:53::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:53::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:53::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:53::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-03-26.20:20:53::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-03-26.20:20:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:53::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:53::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:20:53::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:53::SCWMssOS::In reload Mss file.
+TRACE::2025-03-26.20:20:53::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:53::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:53::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:53::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:53::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:53::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-03-26.20:20:53::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-03-26.20:20:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:53::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:53::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+KEYINFO::2025-03-26.20:20:53::SCWMssOS::Could not open the swdb for system
+KEYINFO::2025-03-26.20:20:53::SCWMssOS::Could not open the sw design at  system
+ERROR: [Hsi 55-1558] Software Design system is not found
+
+TRACE::2025-03-26.20:20:53::SCWMssOS::Cleared the swdb table entry
+TRACE::2025-03-26.20:20:53::SCWMssOS::No sw design opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:53::SCWMssOS::mss exists loading the mss file  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:53::SCWMssOS::Opened the sw design from mss  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:53::SCWMssOS::Adding the swdes entry C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2025-03-26.20:20:53::SCWMssOS::updating the scw layer about changes
+TRACE::2025-03-26.20:20:53::SCWMssOS::Opened the sw design.  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:53::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:53::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:53::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:53::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:53::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:53::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:53::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-03-26.20:20:53::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-03-26.20:20:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:53::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:53::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:20:53::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:53::SCWMssOS::Removing the swdes entry for  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+LOG::2025-03-26.20:20:57::SCWPlatform::Started generating the artifacts platform DMA
+TRACE::2025-03-26.20:20:57::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-03-26.20:20:57::SCWPlatform::Started generating the artifacts for system configuration DMA
+LOG::2025-03-26.20:20:57::SCWSystem::Checking the domain standalone_domain
+LOG::2025-03-26.20:20:57::SCWSystem::Not a boot domain 
+LOG::2025-03-26.20:20:57::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2025-03-26.20:20:57::SCWDomain::Generating domain artifcats
+TRACE::2025-03-26.20:20:57::SCWMssOS::Generating standalone artifcats
+TRACE::2025-03-26.20:20:57::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-03-26.20:20:57::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:57::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:57::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:57::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:20:57::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:20:57::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:20:57::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-03-26.20:20:57::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-03-26.20:20:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:20:57::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:57::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-03-26.20:20:57::SCWMssOS::No sw design opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:57::SCWMssOS::mss exists loading the mss file  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:57::SCWMssOS::Opened the sw design from mss  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:57::SCWMssOS::Adding the swdes entry C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2025-03-26.20:20:57::SCWMssOS::updating the scw layer about changes
+TRACE::2025-03-26.20:20:57::SCWMssOS::Opened the sw design.  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:57::SCWMssOS::Completed writing the mss file at C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp
+TRACE::2025-03-26.20:20:57::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:20:57::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-03-26.20:20:57::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-03-26.20:20:57::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2025-03-26.20:20:57::SCWMssOS::doing bsp build ... 
+TRACE::2025-03-26.20:20:57::SCWMssOS::System Command Ran  C: & cd  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp & make 
+TRACE::2025-03-26.20:20:57::SCWMssOS::"Running Make include in microblaze_0/libsrc/axidma_v9_10/src"
+
+TRACE::2025-03-26.20:20:57::SCWMssOS::make -C microblaze_0/libsrc/axidma_v9_10/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2025-03-26.20:20:57::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2025-03-26.20:20:57::SCWMssOS::ll -Wextra"
+
+TRACE::2025-03-26.20:20:57::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_3/src"
+
+TRACE::2025-03-26.20:20:57::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2025-03-26.20:20:57::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2025-03-26.20:20:57::SCWMssOS::-Wextra"
+
+TRACE::2025-03-26.20:20:57::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_10/src"
+
+TRACE::2025-03-26.20:20:57::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_10/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2025-03-26.20:20:57::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2025-03-26.20:20:57::SCWMssOS::-Wextra"
+
+TRACE::2025-03-26.20:20:57::SCWMssOS::"Running Make include in microblaze_0/libsrc/intc_v3_10/src"
+
+TRACE::2025-03-26.20:20:57::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_10/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2025-03-26.20:20:57::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2025-03-26.20:20:57::SCWMssOS:: -Wextra"
+
+TRACE::2025-03-26.20:20:57::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v7_1/src"
+
+TRACE::2025-03-26.20:20:57::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2025-03-26.20:20:57::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2025-03-26.20:20:57::SCWMssOS::-Wall -Wextra"
+
+TRACE::2025-03-26.20:20:57::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_3/src"
+
+TRACE::2025-03-26.20:20:57::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+TRACE::2025-03-26.20:20:57::SCWMssOS::PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+TRACE::2025-03-26.20:20:57::SCWMssOS::all -Wextra"
+
+TRACE::2025-03-26.20:20:58::SCWMssOS::"Running Make libs in microblaze_0/libsrc/axidma_v9_10/src"
+
+TRACE::2025-03-26.20:20:58::SCWMssOS::make -C microblaze_0/libsrc/axidma_v9_10/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2025-03-26.20:20:58::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2025-03-26.20:20:58::SCWMssOS::-Wextra"
+
+TRACE::2025-03-26.20:20:58::SCWMssOS::"Compiling axidma"
+
+TRACE::2025-03-26.20:20:58::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_3/src"
+
+TRACE::2025-03-26.20:20:58::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2025-03-26.20:20:58::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2025-03-26.20:20:58::SCWMssOS::xtra"
+
+TRACE::2025-03-26.20:20:58::SCWMssOS::"Compiling bram"
+
+TRACE::2025-03-26.20:20:59::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_10/src"
+
+TRACE::2025-03-26.20:20:59::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_10/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2025-03-26.20:20:59::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2025-03-26.20:20:59::SCWMssOS::xtra"
+
+TRACE::2025-03-26.20:20:59::SCWMssOS::"Compiling cpu"
+
+TRACE::2025-03-26.20:20:59::SCWMssOS::"Running Make libs in microblaze_0/libsrc/intc_v3_10/src"
+
+TRACE::2025-03-26.20:20:59::SCWMssOS::make -C microblaze_0/libsrc/intc_v3_10/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2025-03-26.20:20:59::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -W
+TRACE::2025-03-26.20:20:59::SCWMssOS::extra"
+
+TRACE::2025-03-26.20:20:59::SCWMssOS::"Compiling intc"
+
+TRACE::2025-03-26.20:21:00::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v7_1/src"
+
+TRACE::2025-03-26.20:21:00::SCWMssOS::make -C microblaze_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2025-03-26.20:21:00::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2025-03-26.20:21:00::SCWMssOS::ll -Wextra"
+
+TRACE::2025-03-26.20:21:00::SCWMssOS::"Compiling standalone";
+
+TRACE::2025-03-26.20:21:03::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_3/src"
+
+TRACE::2025-03-26.20:21:03::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2025-03-26.20:21:03::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2025-03-26.20:21:03::SCWMssOS:: -Wextra"
+
+TRACE::2025-03-26.20:21:03::SCWMssOS::"Compiling uartlite"
+
+TRACE::2025-03-26.20:21:04::SCWMssOS::'Finished building libraries'
+
+TRACE::2025-03-26.20:21:04::SCWMssOS::Copying to export directory.
+TRACE::2025-03-26.20:21:04::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-03-26.20:21:04::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-03-26.20:21:04::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2025-03-26.20:21:04::SCWSystem::Completed Processing the sysconfig DMA
+LOG::2025-03-26.20:21:04::SCWPlatform::Completed generating the artifacts for system configuration DMA
+TRACE::2025-03-26.20:21:04::SCWPlatform::Started preparing the platform 
+TRACE::2025-03-26.20:21:04::SCWSystem::Writing the bif file for system config DMA
+TRACE::2025-03-26.20:21:04::SCWSystem::dir created 
+TRACE::2025-03-26.20:21:04::SCWSystem::Writing the bif 
+TRACE::2025-03-26.20:21:04::SCWPlatform::Started writing the spfm file 
+TRACE::2025-03-26.20:21:04::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-03-26.20:21:04::SCWPlatform::Completed generating the platform
+TRACE::2025-03-26.20:21:04::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:21:04::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:21:04::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:21:04::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:21:04::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:21:04::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:21:04::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-03-26.20:21:04::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-03-26.20:21:04::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:21:04::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:21:04::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:21:04::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:21:04::SCWWriter::formatted JSON is {
+	"platformName":	"DMA",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"DMA",
+	"platHandOff":	"C:/Users/enine/Desktop/DMA/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"DMA",
+	"systems":	[{
+			"systemName":	"DMA",
+			"systemDesc":	"DMA",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"DMA",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"4a374d4c711e440f40e29adcede1bcb0",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-03-26.20:21:04::SCWPlatform::updated the xpfm file.
+TRACE::2025-03-26.20:21:04::SCWPlatform::Trying to open the hw design at C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:21:04::SCWPlatform::DSA given C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:21:04::SCWPlatform::DSA absoulate path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:21:04::SCWPlatform::DSA directory C:/Users/enine/Desktop/DMA/vitis/DMA/hw
+TRACE::2025-03-26.20:21:04::SCWPlatform:: Platform Path C:/Users/enine/Desktop/DMA/vitis/DMA/hw/design_1_wrapper.xsa
+TRACE::2025-03-26.20:21:04::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2025-03-26.20:21:04::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2025-03-26.20:21:04::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2025-03-26.20:21:04::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-03-26.20:21:04::SCWMssOS::Checking the sw design at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2025-03-26.20:21:04::SCWMssOS::DEBUG:  swdes dump  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2025-03-26.20:21:04::SCWMssOS::Sw design exists and opened at  C:/Users/enine/Desktop/DMA/vitis/DMA/microblaze_0/standalone_domain/bsp/system.mss

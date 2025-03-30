@@ -1,0 +1,21 @@
+19:29:03 **** Incremental Build of configuration Debug for project helloworld ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/enine/Desktop/DMA/vitis/DMA/export/DMA/sw/DMA/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: helloworld.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/enine/Desktop/DMA/vitis/DMA/export/DMA/sw/DMA/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: helloworld.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 103492	   1800	   5204	 110496	  1afa0	helloworld.elf
+Finished building: helloworld.elf.size
+ 
+
+19:29:03 Build Finished (took 589ms)
+

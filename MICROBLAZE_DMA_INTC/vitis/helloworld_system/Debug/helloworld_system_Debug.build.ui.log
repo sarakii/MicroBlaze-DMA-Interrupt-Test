@@ -1,0 +1,6 @@
+2025-03-27T15:38:55.778674100255-15:38:55 **** Incremental Build of configuration Debug for project helloworld_system ****
+000-make all 
+000-Skipping SD card image generation. Reason: The system project only has applications for microblaze processors.
+00255-
+15:38:55 Build Finished (took 99ms)
+
